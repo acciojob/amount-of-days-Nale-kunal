@@ -10,7 +10,7 @@ let input = prompt("Enter a year:");
 let year = Number(input);
   
 if (year >= 1 && year <= 9999) {
-  alert("Number of days in year " + year + " is: " + daysOfAYear(year));
+  alert(daysOfAYear(year)); // ✅ ONLY alert the number
 } else {
-  alert("Please enter a valid year between 1 and 9999.");
+  alert("Invalid year");
 }
